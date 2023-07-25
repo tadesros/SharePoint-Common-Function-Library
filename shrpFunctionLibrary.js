@@ -29,3 +29,22 @@ function unlockField(fieldToLock) {
 		'[title="' + fieldToLock + '"]'
 	).disabled = false);
 }
+
+
+/**
+ * Clear a Text Field or TextArea by Title
+ */
+function clearDateTextOrTextArea(title) {
+	let thisElement = document.querySelector('[title="' + title + '"]');
+	thisElement.value = "";
+}
+function hideDate(title) {
+	$('nobr:contains("' + title + '")')
+		.closest("tr")
+		.hide();
+}
+function unHideDate(title) {
+	$('nobr:contains("' + title + '")')
+		.closest("tr")
+		.show();
+}
