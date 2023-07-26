@@ -29,8 +29,6 @@ function unlockField(fieldToLock) {
 		'[title="' + fieldToLock + '"]'
 	).disabled = false);
 }
-
-
 /**
  * Clear a Text Field or TextArea by Title
  */
@@ -55,3 +53,21 @@ function sleep(milliseconds) {
 		currentDate = Date.now();
 	} while (currentDate - date < milliseconds);
 }
+/**
+ * Function: Set Date Field: Set the value of a dropdown given the Strings FieldName  and Value
+ **/
+function setDateField(fieldName, dateFieldFormat) {
+	document.querySelector(`[title="${fieldName}"]`).value = dateFieldFormat;
+}
+/**
+ * Function: Set Date Field: Set the value of a dropdown given the Strings FieldName  and Value
+ **/
+function setTextField(fieldName, string) {
+	document.querySelector(`[title="${fieldName}"]`).value = string;
+}
+
+
+
+
+
+
