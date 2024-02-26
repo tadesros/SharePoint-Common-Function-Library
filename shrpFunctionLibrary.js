@@ -67,6 +67,16 @@ function setTextField(fieldName, string) {
 }
 
 
+/**
+ * addPlaceHolder()
+ * @param {*} fieldTitle = Title of the field on the form
+ * @param {*} message    = Message to be displayed
+ */ 
+function addPlaceHolder(fieldTitle, message) {
+  var userInput = document.querySelector(`[title="${fieldTitle}"]`);
+  //var userInput = document.querySelector('[title="Vendor Description"]');
+  userInput.setAttribute("placeholder", message);
+}
 
 
 
